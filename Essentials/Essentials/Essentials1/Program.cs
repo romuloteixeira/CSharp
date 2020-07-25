@@ -9,6 +9,9 @@
             //var thirdClassFinalizer = new ThirdClassFinalizer();
             var finalizer2 = new Finalizer2();
             finalizer2.ShowDuration();
+
+            ExampleClass ex = new ExampleClass();
+            ex.ShowDuration();
         }
     }
 }
