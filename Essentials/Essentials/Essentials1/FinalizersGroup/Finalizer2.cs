@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace Essentials1
+namespace Essentials1.FinalizersGroup
 {
     class Finalizer2
     {

@@ -1,8 +1,8 @@
-﻿namespace Essentials1
-{
-    using System;
-    using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 
+namespace Essentials1.FinalizersGroup
+{
     public class ExampleClass
     {
         Stopwatch sw;

@@ -2,7 +2,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Essentials1
+namespace Essentials1.FinalizersGroup
 {
     public static class Finalizers
     {
