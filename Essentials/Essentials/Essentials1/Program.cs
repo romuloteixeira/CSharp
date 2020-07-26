@@ -1,4 +1,6 @@
-﻿using Essentials1.FinalizersGroup;
+﻿using Essentials1.Deletgates;
+using Essentials1.FinalizersGroup;
+using Essentials1.Helper;
 using Essentials1.Indexers;
 using System;
 
@@ -13,6 +15,13 @@ namespace Essentials1
             Finalizer();
             Nested();
             Indexer();
+            Delegaters();
+        }
+
+        private static void Delegaters()
+        {
+            NewSubject.WriteLine(nameof(Delegate1));
+            CallerDelegate1.Run();
         }
 
         private static void Indexer()
@@ -44,8 +53,7 @@ namespace Essentials1
             myStringCollection[count++] = $"My Test {count}";
             myStringCollection[count++] = $"My Test {count}";
 
-            Console.WriteLine();
-            Console.WriteLine($" *************     {nameof(Indexer1<string>)}       **********************");
+            NewSubject.WriteLine(nameof(Indexer1<string>));
             
             for (int i = 0; i < count; i++)
             {
