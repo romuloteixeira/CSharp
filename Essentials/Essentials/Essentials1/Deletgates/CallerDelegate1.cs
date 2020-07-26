@@ -9,6 +9,10 @@ namespace Essentials1.Deletgates
         {
             Console.WriteLine();
             Delegate1.Del handler = SubscribeDelegate1.DelegateMethod;
+            
+            handler += SubscribeDelegate1.DelegateMethod;
+            handler += SubscribeDelegate1.DelegateMethod2;
+
             handler("First Delegate Test.");
 
             NewSubject.WriteLine("Delegate as a parameters - Name: Callback");
@@ -32,7 +36,11 @@ namespace Essentials1.Deletgates
     {
         public static void DelegateMethod(string message)
         {
-            Console.WriteLine(message);
+            Console.WriteLine($"{message} - ++ DelegateMethod ++");
+        }
+        public static void DelegateMethod2(string message)
+        {
+            Console.WriteLine($"{message} - ++DelegateMethod2++");
         }
 
         public static void MethodWithCallback(int value1, int value2, Delegate1.Del callback, IMyPrint myPrint)
