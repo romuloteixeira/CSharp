@@ -22,6 +22,9 @@ namespace Essentials1.Deletgates
 
             NewSubject.WriteLine("Delegate as a parameters - Name: Callback 2");
 
+            handler -= SubscribeDelegate1.DelegateMethod2;
+
+
             IMyPrint myPrint2 = new MyPrint2();
             SubscribeDelegate1.MethodWithCallback(3, 5, handler, myPrint2);
         }
