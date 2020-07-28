@@ -1,0 +1,13 @@
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\bin\Debug\netcoreapp3.1\OOP.exe
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\bin\Debug\netcoreapp3.1\OOP.deps.json
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\bin\Debug\netcoreapp3.1\OOP.runtimeconfig.json
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\bin\Debug\netcoreapp3.1\OOP.runtimeconfig.dev.json
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\bin\Debug\netcoreapp3.1\OOP.dll
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\bin\Debug\netcoreapp3.1\OOP.pdb
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\obj\Debug\netcoreapp3.1\OOP.csprojAssemblyReference.cache
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\obj\Debug\netcoreapp3.1\OOP.AssemblyInfoInputs.cache
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\obj\Debug\netcoreapp3.1\OOP.AssemblyInfo.cs
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\obj\Debug\netcoreapp3.1\OOP.csproj.CoreCompileInputs.cache
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\obj\Debug\netcoreapp3.1\OOP.dll
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\obj\Debug\netcoreapp3.1\OOP.pdb
+C:\Romulo\Source\CSharp\Essentials\Essentials\OOP\obj\Debug\netcoreapp3.1\OOP.genruntimeconfig.cache

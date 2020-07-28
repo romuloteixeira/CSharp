@@ -42,7 +42,7 @@ namespace Essentials1.Deletgates
         }
         public static void DelegateMethod2(string message)
         {
-            Console.WriteLine($"{message} - ++DelegateMethod2++");
+            Console.WriteLine($"{message} - ++ DelegateMethod2 ++");
         }
 
         public static void MethodWithCallback(int value1, int value2, Delegate1.Del callback, IMyPrint myPrint)
