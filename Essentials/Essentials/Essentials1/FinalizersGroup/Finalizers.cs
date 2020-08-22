@@ -15,6 +15,7 @@ namespace Essentials1.FinalizersGroup
 
     struct StructFinalizerError
     {
+        //// finalizer
         //~StructFinlizersError()
         //{
         //    System.Diagnostics.Trace.WriteLine("Do not work.");
@@ -23,6 +24,7 @@ namespace Essentials1.FinalizersGroup
 
     class FirstClassFinalizer
     {
+        // finalizer
         ~FirstClassFinalizer() => Writer();
 
         private void Writer()
@@ -45,11 +47,13 @@ namespace Essentials1.FinalizersGroup
 
     class SecondClassFinalizer : FirstClassFinalizer
     {
+        // finalizer
         ~SecondClassFinalizer() => System.Diagnostics.Trace.WriteLine("Second's destructor is called.");
     }
 
     class ThirdClassFinalizer : SecondClassFinalizer
     {
+        // finalizer
         ~ThirdClassFinalizer() => Trace.WriteLine("Third's destructor is called.");
     }
 }

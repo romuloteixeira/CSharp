@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP.Polymorphisms
 {
@@ -39,9 +36,10 @@ namespace OOP.Polymorphisms
 
     public class Circle : Shape
     {
+        public int MyProperty { get; set; } = 5;
         public override void Draw()
         {
-            Console.WriteLine($"Drawing a {nameof(Circle)}");
+            Console.WriteLine($"Drawing a {nameof(Circle)} MyProperty {MyProperty}");
             base.Draw();
         }
     }

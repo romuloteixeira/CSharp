@@ -3,7 +3,7 @@ using System;
 
 namespace Essentials1.Deletgates
 {
-    public static class CallerDelegate1
+    public static class Delegate1Caller
     {
         public static void Run()
         {
