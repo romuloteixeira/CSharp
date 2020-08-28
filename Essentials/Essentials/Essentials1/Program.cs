@@ -1,5 +1,6 @@
 ﻿using Essentials1.CovariancesContravariances.Contravariances;
 using Essentials1.CovariancesContravariances.Covariances;
+using Essentials1.CovariancesContravariances.Covariances.Fruits;
 using Essentials1.Deletgates;
 using Essentials1.FinalizersGroup;
 using Essentials1.Helper;
@@ -76,10 +77,67 @@ namespace Essentials1
             switch (option.ToLower())
             {
                 case "a":
-                    CovarianceRunner();
+                    CovarianceMenu();
                     break;
 
                 case "b":
+                    ContracovarianceMenu();
+                    break;
+
+                default:
+                    NotFoundMessage();
+                    break;
+            }
+        }
+
+        private static void CovarianceMenu()
+        {
+            Menu.SubMenuWriteLine();
+            Console.WriteLine(" A - Base Covariance in Generic ");
+            Console.WriteLine(" B - Contracovariance in Generic Fruits ");
+            Menu.EndMenuWriteLine();
+
+            var option = Console.ReadLine();
+
+            switch (option.ToLower())
+            {
+                case "a":
+                    BaseCovarianceRunner();
+                    break;
+
+                case "b":
+                    CovarianceFruitsRunner();
+                    break;
+
+                default:
+                    NotFoundMessage();
+                    break;
+            }
+        }
+
+        private static void BaseCovarianceRunner()
+        {
+            NewSubject.WriteLine("Base Covariance");
+            Covariance.Run();
+        }
+
+        private static void CovarianceFruitsRunner()
+        {
+            NewSubject.WriteLine("Covariance with fruits");
+            ShowFruit.Run();
+        }
+
+        private static void ContracovarianceMenu()
+        {
+            Menu.SubMenuWriteLine();
+            Console.WriteLine(" A - Contracovariance in Generic ");
+            Menu.EndMenuWriteLine();
+
+            var option = Console.ReadLine();
+
+            switch (option.ToLower())
+            {
+                case "a":
                     ContravarianceRunner();
                     break;
 
@@ -89,15 +147,9 @@ namespace Essentials1
             }
         }
 
-        private static void CovarianceRunner()
-        {
-            NewSubject.WriteLine("Covariance");
-            Covariance.Run();
-        }
-
         private static void ContravarianceRunner()
         {
-            NewSubject.WriteLine("Covariance");
+            NewSubject.WriteLine(nameof(Contravariance));
             Contravariance.Run();
         }
 
