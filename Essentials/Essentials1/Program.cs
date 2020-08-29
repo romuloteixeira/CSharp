@@ -1,9 +1,10 @@
-﻿using Essentials1.CovariancesContravariances.Contravariances;
+﻿using Essentials1.AsyncAwaitTask.TeaTime1;
+using Essentials1.CovariancesContravariances.Contravariances;
 using Essentials1.CovariancesContravariances.Covariances;
 using Essentials1.CovariancesContravariances.Covariances.Fruits;
 using Essentials1.Deletgates;
 using Essentials1.FinalizersGroup;
-using Essentials1.Helper;
+using Essentials1.Helpers;
 using Essentials1.Indexers;
 using System;
 
@@ -30,6 +31,7 @@ namespace Essentials1
             Console.WriteLine(" 4 - Indexers ");
             Console.WriteLine(" 5 - Indexers ");
             Console.WriteLine(" 6 - Covariance and Contravariance ");
+            Console.WriteLine(" 7 - Async, Await and Task ");
             Menu.EndMenuWriteLine();
             var option = Console.ReadLine();
 
@@ -59,10 +61,40 @@ namespace Essentials1
                     CovarianceContracovarianceMenu();
                     break;
 
+                case "7":
+                    AsyncAwaitTask();
+                    break;
+
                 default:
                     NotFoundMessage();
                     break;
             }
+        }
+
+        private static void AsyncAwaitTask()
+        {
+            Menu.SubMenuWriteLine();
+            Console.WriteLine(" A - Tea Time ");
+            Menu.EndMenuWriteLine();
+
+            var option = Console.ReadLine();
+
+            switch (option.ToLower())
+            {
+                case "a":
+                    TeaTimeMenu();
+                    break;
+
+                default:
+                    NotFoundMessage();
+                    break;
+            }
+        }
+
+        private static void TeaTimeMenu()
+        {
+            NewSubject.WriteLine("Tea Time");
+            TeaTime1.Run();
         }
 
         private static void CovarianceContracovarianceMenu()
