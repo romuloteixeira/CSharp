@@ -5,11 +5,12 @@
 SyncCodeMR3-workspace.xml
 
 # User-specific files
+*.vs
 *.suo
-.suo
+.suo 
 *.user
 *.sln.docstates
-*.vs
+
 
 # Build results
 [Dd]ebug/
@@ -21,6 +22,7 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+
 
 # Roslyn cache directories
 *.ide/
