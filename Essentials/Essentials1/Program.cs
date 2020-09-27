@@ -1,4 +1,5 @@
-﻿using Essentials1.AsyncAwaitTask.TeaTime1;
+﻿using Essentials1.AsyncAwaitTask.CallWebSite;
+using Essentials1.AsyncAwaitTask.TeaTime1;
 using Essentials1.CovariancesContravariances.Contravariances;
 using Essentials1.CovariancesContravariances.Covariances;
 using Essentials1.CovariancesContravariances.Covariances.Fruits;
@@ -75,6 +76,7 @@ namespace Essentials1
         {
             Menu.SubMenuWriteLine();
             Console.WriteLine(" A - Tea Time ");
+            Console.WriteLine(" B - Call Web Site ");
             Menu.EndMenuWriteLine();
 
             var option = Console.ReadLine();
@@ -85,10 +87,20 @@ namespace Essentials1
                     TeaTimeMenu();
                     break;
 
+                case "b":
+                    GoogleWebSiteMenu();
+                    break;
+
                 default:
                     NotFoundMessage();
                     break;
             }
+        }
+
+        private static void GoogleWebSiteMenu()
+        {
+            NewSubject.WriteLine("Web Site");
+            CallWebSite.Run();
         }
 
         private static void TeaTimeMenu()

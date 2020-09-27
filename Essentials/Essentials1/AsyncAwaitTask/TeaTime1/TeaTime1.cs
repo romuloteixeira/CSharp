@@ -1,8 +1,5 @@
 ﻿using Essentials1.Helpers.Extension;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace Essentials1.AsyncAwaitTask.TeaTime1
@@ -39,7 +36,7 @@ namespace Essentials1.AsyncAwaitTask.TeaTime1
         {
             "Start the kettle.".WriteLine();
             "Waiting for the kettle ...".WriteLine();
-            await Task.Delay(300);
+            await Task.Delay(400);
 
             "Kettle finished boiling.".WriteLine();
 
